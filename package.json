@@ -1,6 +1,6 @@
 {
   "name": "@nestjs/cli",
-  "version": "12.0.5",
+  "version": "12.0.6",
   "type": "module",
   "description": "Nest - modern, fast, powerful node.js web framework (@cli)",
   "publishConfig": {
@@ -13,11 +13,11 @@
     "nest": "bin/nest.js"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "node api.js && tsc",
     "clean": "node tools/clean.js",
     "format": "prettier --write \"**/*.ts\"",
     "lint": "oxlint lib/ commands/ actions/",
-    "start": "node bin/nest.js",
+    "start": "node api.js && node bin/nest.js",
     "prepack": "npm run build",
     "prepublish:next": "npm run build",
     "publish:next": "npm publish --access public --tag next",

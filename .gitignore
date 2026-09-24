@@ -17,9 +17,12 @@ bin/**/*.d.ts
 # configuration
 renovate.json
 gulpfile.js
-/.vscode
 
 # sample
 /sample
 
 yarn.lock
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore

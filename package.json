@@ -13,11 +13,11 @@
     "nest": "bin/nest.js"
   },
   "scripts": {
-    "build": "node api.js && tsc",
+    "build": "tsc",
     "clean": "node tools/clean.js",
     "format": "prettier --write \"**/*.ts\"",
     "lint": "oxlint lib/ commands/ actions/",
-    "start": "node api.js && node bin/nest.js",
+    "start": "node bin/nest.js",
     "prepack": "npm run build",
     "prepublish:next": "npm run build",
     "publish:next": "npm publish --access public --tag next",

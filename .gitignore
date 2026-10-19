@@ -10,7 +10,6 @@ commands/**/*.js
 actions/**/*.js
 bin/**/*.js
 lib/**/*.d.ts
-temp_auto_push.bat
 commands/**/*.d.ts
 actions/**/*.d.ts
 bin/**/*.d.ts
@@ -18,9 +17,9 @@ bin/**/*.d.ts
 # configuration
 renovate.json
 gulpfile.js
+/.vscode
 
 # sample
 /sample
 
-yarn.lock.gitignore
-branch_structure.json
+yarn.lock
